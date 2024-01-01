@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front End Developer</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img class="p-picture" src="pictures/fabri.png" alt="Profile picture" />
+      <h1 class="name">Fabrizio Pullara</h1>
+      <h2 class="title">Front End Developer</h2>
+
+      <div class="info">
+        <h3>Skills:</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+        </ul>
+      </div>
+
+      <h3>About me!</h3>
+      <p>
+        Hey there! 👋 I'm an Italian at heart with a knack for trying out
+        different jobs. I've been a seller, sales assistant, techie, and even
+        dabbled in photography. Right now, I'm rocking the customer service game
+        for an e-commerce gig.
+      </p>
+
+      <p>
+        But guess what? I've decided to spice things up and dive into front-end
+        development. Currently learning the ropes at Sundsgårdens Folkhögskola,
+        I'm turning my love for all things tech into something real and cool.
+      </p>
+      <p>
+        Outside the tech world, I'm a sports buff, especially when it comes to
+        playing football. Teamwork and giving my best on the field? That's my
+        jam.
+      </p>
+      <p>
+        Come along for the ride as I blend my varied experiences with a passion
+        for IT. Let's make some awesome stuff happen! ⚽💻✨
+      </p>
+    </div>
+
+    <div class="projects">
+      <h2>Here some progects I'm working on:</h2>
+
+      <ol>
+        <li>
+          <a href="https://fabriziopullara.github.io/Assignment-6/">
+            This assignment was to create a simple webpage with a navigation bar
+            and a footer. I used HTML and CSS to create this page.</a
+          >
+        </li>
+        <li>
+            <a href="https://fabriziopullara.github.io/Group-projeckt-Bar/">That was a group Project, where I took care of the Home page</a>
+        </li>
+      </ol>
+    </div>
+
+    <form id="contactForm">
+        <h3>Contact me!</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+<script>
+    function submitForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        // Simple validation
+        if (name === '' || email === '' || message === '') {
+            alert("Please fill in all fields.");
+            return;
+        }
+
+
+        alert("Form submitted!\nName: " + name + "\nEmail: " + email + "\nMessage: " + message);
+    }
+</script>
+
+
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
