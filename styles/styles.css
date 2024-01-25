@@ -1,86 +1,108 @@
+/* styles.css */
+
 body {
-  font-family: Arial, sans-serif;
-  align-items: center;
-  height: 100vh;
-  margin: 0px; 
-  letter-spacing: 1px;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
   text-align: center;
-  
-  
+  max-width: 600px; /* Adjusted the max-width */
+  margin: 20px auto; /* Added some margin */
+  padding: 40px;
+  background-color: #9c9c9c4b;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Added border-radius for a rounded look */
 }
-.p-picture{
-  max-width: 200px;
+
+
+.p-picture {
+  width: 170px; 
+  height: 195px; 
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  
+}
+
+.p-picture:hover {
+  transform: scale(1.1);
 }
 
 .name {
+  color: #333;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
 .title {
+  color: #555;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-
 .info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-background-color: rgba(184, 135, 11, 0.427);
+  margin-bottom: 30px;
 }
 
-.info p {
+.info h3 {
   color: #333;
-  margin: 0;
+}
+
+.info ul {
+  list-style: none;
   padding: 0;
 }
 
-
-form {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
+.info li {
   margin-bottom: 10px;
-  box-sizing: border-box;
 }
 
-button {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
+#about-me,
+#education,
+#professional-background,
+#sports-enthusiast,
+#web-development-journey,
+#connect {
+  margin-bottom: 30px;
 }
 
-button:hover {
-  background-color: #2980b9;
+.projects {
+  margin: 30px 0;
 }
 
 .projects h2 {
-text-align: center;
-}
-a{
-  color: green;
-  font-weight: 600;
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
-h3{
-  color: rgb(100, 1, 100);
+footer {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 10px; /* Added border-radius for consistency */
+}
+
+footer h3 {
+  margin-bottom: 15px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+li{
+  list-style: none;
 }
