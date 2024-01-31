@@ -1,117 +1,117 @@
-/* styles.css */
-
 body {
   font-family: 'Lexend', sans-serif;
-  font-weight: 400;
-    margin: 0;
+  margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #f0f0f0; /* Background color */
 }
 
 .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* Container background color */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.namePicture{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 600px;
+}
+
+.name {
   text-align: center;
-  max-width: 600px; /* Adjusted the max-width */
-  margin: 20px auto; /* Added some margin */
-  padding: 40px;
-  background-color: #9c9c9c4b;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  border-radius: 10px; /* Added border-radius for a rounded look */
+  margin: 10px 0;
+  font-size: 1.5em; /* Adjust font size */
 }
 
+.name span {
+  color: #3498db; /* First name color */
+}
 
+.name span.last-name {
+  color: #333; /* Last name color */
+}
+/* Header Styles */
 .p-picture {
-  max-width: 170px; 
-  max-height: 195px; 
-  margin-bottom: 20px;
-  transition: transform 0.3s ease-in-out;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-.p-picture:hover {
-  transform: scale(1.1);
+  border-radius: 10%;
+  max-width: 150px; /* Adjust the image size */
+  display: block;
+  margin: 0 auto 10px; /* Center the image and add some space at the bottom */
 }
 
 .name {
   color: #333;
-  font-size: 24px;
-  margin-bottom: 10px;
+  text-align: center;
+  margin: 10px 0;
 }
 
 .title {
-  color: #555;
-  font-size: 18px;
-  margin-bottom: 20px;
+  color: #666;
+  text-align: center;
 }
 
+/* Section Styles */
+section {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Section background color */
+}
+
+/* Project Section Styles */
+.projects {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Projects section background color */
+}
+
+/* Skill Section Styles */
 .info {
-  margin-bottom: 30px;
+  background-color: #fbfdfe; /* Skill section background color */
+  color: #000000;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .info h3 {
-  color: #333;
-}
-
-.info ul {
-  list-style: none;
-  padding: 0;
-}
-
-.info li {
   margin-bottom: 10px;
 }
 
-#about-me,
-#education,
-#professional-background,
-#sports-enthusiast,
-#web-development-journey,
-#connect {
-  margin-bottom: 30px;
+.info ul {
+  padding: 0;
+  list-style-type: none;
 }
 
-.projects {
-  margin: 30px 0;
+.info li {
+  margin-bottom: 5px;
 }
 
-.projects h2 {
-  color: #333;
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
+/* Footer Styles */
 footer {
-  margin-top: 30px;
-  padding: 20px;
   background-color: #333;
   color: #fff;
-  border-radius: 10px; /* Added border-radius for consistency */
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.contact{
+  color: white;
 }
 
-footer h3 {
-  margin-bottom: 15px;
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
 }
 
-footer p {
-  margin: 0;
-}
-
-footer a {
-  color: #fff;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-li{
-  margin-bottom: 8px;
-  
-}
-a{
-  text-decoration: none;
-}
-a:hover{
-  font-size: 20px;
-  transition: 2s;
-}
