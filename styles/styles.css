@@ -4,7 +4,7 @@ body {
   padding: 0;
   background: url('../pictures/background.jpg') center center fixed;
   background-size: cover;
-  animation: gradientAnimation 10s infinite alternate; /* Background animation */
+  animation: gradientAnimation 12s infinite alternate; /* Background animation */
 
 }
 
