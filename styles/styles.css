@@ -4,6 +4,17 @@ body {
   padding: 0;
   background: url('../pictures/background.jpg') center center fixed;
   background-size: cover;
+  animation: gradientAnimation 10s infinite alternate; /* Background animation */
+
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 30%;
+  }
 }
 
 .container {
