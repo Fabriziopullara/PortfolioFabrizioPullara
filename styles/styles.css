@@ -2,19 +2,24 @@ body {
   font-family: 'Lexend', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0; /* Background color */
+  background: url('../pictures/background.jpg') center center fixed;
+  background-size: cover;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff; /* Container background color */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.namePicture{
+.info li{
+  list-style: none;
+ 
+}
+
+.namePicture {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -24,97 +29,108 @@ body {
 .name {
   text-align: center;
   margin: 10px 0;
-  font-size: 1.5em; /* Adjust font size */
+  font-size: 1.8em;
+  color: #fff;
 }
 
-.name span {
-  color: #3498db; /* First name color */
-}
 
 .name span.last-name {
-  color: #333; /* Last name color */
-}
-/* Header Styles */
-.p-picture {
-  border-radius: 10%;
-  max-width: 150px; /* Adjust the image size */
-  display: block;
-  margin: 0 auto 10px; /* Center the image and add some space at the bottom */
+  color: #ffffff;
 }
 
-.name {
-  color: #333;
-  text-align: center;
-  margin: 10px 0;
+.name span.first-name {
+  color: #ae2121;
+  font-size: 50px;
+
+
+}
+
+.p-picture {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto 15px;
 }
 
 .title {
-  color: #666;
-  text-align: center;
+  color: #95a5a6;
 }
 
-/* Section Styles */
 section {
   margin: 20px 0;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #fff; /* Section background color */
+  color: #fff; /* Text color */
 }
 
-/* Project Section Styles */
 .projects {
   margin: 20px 0;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #fff; /* Projects section background color */
-}
-.projects li{
-  margin-bottom: 10px;
 }
 
-/* Skill Section Styles */
-.info {
-  background-color: #fbfdfe; /* Skill section background color */
-  color: #000000;
+.projects li {
+  margin-bottom: 10px;
+  list-style: none;
+  background-color: rgba(236, 240, 241, 0.5); /* Semi-transparent light gray background */
   padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.projects a:hover{
+  color: white;
+  font-size: 20px;
+  transition: 1s;
+
+}
+
+h2{
+  color: white;
+}
+
+.info {
+  background-color: rgba(236, 240, 241, 0.5);
+  color: #fff;
+  padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 .info h3 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-.info ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-.info li {
-  margin-bottom: 5px;
-}
-
-/* Footer Styles */
 footer {
-  background-color: #333;
+  background-color: rgba(52, 73, 94, 0.9); /* Semi-transparent dark blue background */
   color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   margin-top: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.contact{
-  color: white;
+
+.contact {
+  color: #fff;
 }
 
-/* Responsive Styles */
+.icons a {
+  color: #fff;
+  margin: 8px;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: #3498db;
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
 @media screen and (max-width: 600px) {
   .container {
     padding: 10px;
   }
 }
-
